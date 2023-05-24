@@ -1,0 +1,25 @@
+@import "modules/editor/editor";
+@import "modules/body/body";
+@import "modules/breadcrumbs/breadcrumbs";
+@import "modules/button/button";
+@import "modules/columns/columns";
+@import "modules/container/container";
+@import "modules/form/form";
+@import "modules/input/input";
+@import "modules/main/main";
+@import "modules/section/section";
+@import "modules/title/title";
+@import "modules/intro/intro";
+@import "modules/tour-info/tour-info";
+@import "modules/articles/article-card";
+@import "modules/articles/article-resort";
+@import "modules/graph/graph";
+@import "modules/text/text";
+@import "modules/list/list";
+@import "modules/slogan/slogan";
+@import "modules/articles/article-reviews";
+@import "modules/slick/slick";
+
+@include r(1200) {
+    
+}

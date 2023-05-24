@@ -1,0 +1,32 @@
+.slick {
+  &-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+  }
+  &-btn {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 57px;
+    flex-shrink: 0;
+    padding: rem(17) rem(14);
+    background-color: #562E95;
+    font-size: 0;
+    border-radius: 10px 0 0 10px;
+    transform: translateY(-50%);
+    z-index: 5;
+    &--next {
+      right: rem(-43);
+      transform: translateY(-50%) rotate(-180deg);
+    }
+    &--prev {
+      left: rem(-41);
+    }
+  }
+}

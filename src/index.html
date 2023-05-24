@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <%= htmlWebpackPlugin.options.head %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body class="body">
+<main class="main main--clear">
+    <section class="section section--overflow section--background"
+             style="background: url('./assets/images/bg-tour.jpg')">
+        <div class="container">
+            <div class="breadcrumbs breadcrumbs--white mtb-20" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                <div class="breadcrumbs__block" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope=""
+                     itemtype="http://schema.org/ListItem"><a class="breadcrumbs__link" href="/" title="Главная"
+                                                              itemprop="item">
+                    <span itemprop="name">Главная</span>
+                </a>
+                    <meta itemprop="position" content="1">
+                </div>
+                <div class="breadcrumbs__block" id="bx_breadcrumb_1" itemprop="itemListElement" itemscope=""
+                     itemtype="http://schema.org/ListItem">
+                    <svg class="breadcrumbs__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                    </svg>
+                    <a class="breadcrumbs__link" href="/search/" title="Поиск тура" itemprop="item">
+                        <span itemprop="name">Поиск тура</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </div>
+                <div class="breadcrumbs__block" id="bx_breadcrumb_2" itemprop="itemListElement" itemscope=""
+                     itemtype="http://schema.org/ListItem">
+                    <svg class="breadcrumbs__icon">
+                        <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                    </svg>
+                    <a class="breadcrumbs__link" href="/search/recreation/" title="Тип отдыха" itemprop="item">
+                        <span itemprop="name">Страны</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                </div>
+                <svg class="breadcrumbs__icon">
+                    <use xlink:href="./assets/sprite/sprite.svg#icon-lg-arrow"></use>
+                </svg>
+                <span>Туры Египет</span>
+            </div>
+            <div class="intro pt-80 ptm-180 pbm-260 pb-135">
+                <h1 class="title title--white text-center">Египет</h1>
+                <button class="btn btn-primary btn-lg btn-animation">Купить тур</button>
+            </div>
+        </div>
+    </section>
+    <section class="section section--top mb-60 mbm-50">
+        <div class="container">
+            <div class="tour-info">
+                <div class="tour-info__grid">
+                    <div class="tour-info__item">
+                        <picture class="tour-info__picture">
+                            <svg class="tour-info__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-language"></use>
+                            </svg>
+                        </picture>
+                        <div class="tour-info__info">
+                            <h3 class="tour-info__title">Язык</h3>
+                            <p class="tour-info__text">русский</p>
+                        </div>
+                    </div>
+                    <div class="tour-info__item">
+                        <picture class="tour-info__picture">
+                            <svg class="tour-info__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-money"></use>
+                            </svg>
+                        </picture>
+                        <div class="tour-info__info">
+                            <h3 class="tour-info__title">Валюта</h3>
+                            <p class="tour-info__text">дирхам</p>
+                        </div>
+                    </div>
+                    <div class="tour-info__item">
+                        <picture class="tour-info__picture">
+                            <svg class="tour-info__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-visa"></use>
+                            </svg>
+                        </picture>
+                        <div class="tour-info__info">
+                            <h3 class="tour-info__title">Виза</h3>
+                            <p class="tour-info__text">не нужна</p>
+                        </div>
+                    </div>
+                    <div class="tour-info__item">
+                        <picture class="tour-info__picture">
+                            <svg class="tour-info__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-people"></use>
+                            </svg>
+                        </picture>
+                        <div class="tour-info__info">
+                            <h3 class="tour-info__title">Население</h3>
+                            <p class="tour-info__text">10 млн. человек</p>
+                        </div>
+                    </div>
+                    <div class="tour-info__item">
+                        <picture class="tour-info__picture">
+                            <svg class="tour-info__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-planet"></use>
+                            </svg>
+                        </picture>
+                        <div class="tour-info__info">
+                            <h3 class="tour-info__title">Часовой пояс</h3>
+                            <p class="tour-info__text">+1 час</p>
+                        </div>
+                    </div>
+                    <div class="tour-info__item">
+                        <picture class="tour-info__picture">
+                            <svg class="tour-info__icon">
+                                <use xlink:href="./assets/sprite/sprite.svg#icon-time"></use>
+                            </svg>
+                        </picture>
+                        <div class="tour-info__info">
+                            <h3 class="tour-info__title">Время полёта</h3>
+                            <p class="tour-info__text">=3 600 км, около 5 часов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section mb-100 mbm-60 section--clear">
+        <div class="container">
+            <div class="text mb-40">
+                <h3>
+                    Общая информация
+                </h3>
+                <p>
+                    Египет — государство в северо-восточной части Африки и на Синайском полуострове.Граничит с
+                    Израилем,
+                    Палестинской национальной администрацией (сектор Газа), Суданом и Ливией. На севере территория
+                    омывается водами Средиземного, на востоке — Красного морей. Оба моря соединены посредством
+                    искусственно сооруженного Суэцкого канала.
+                    География
+                    Египет граничит на западе с Ливией, на юге – с Суданом, на востоке – с Палестинской автономией,
+                    Израилем, имеет также морскую границу с Саудовской Аравией и Иорданией.
+                    Омывается на севере Средиземным морем, на востоке – Красным морем. Египту принадлежит самый
+                    крупный
+                    искусственно сооруженный канал – Суэцкий канал, который соединяет Средиземное и Красное моря,
+                    открывая тем самым короткий путь из Атлантического в Индийский океан.На протяжении всей
+                    территории
+                    Египта с юга на север протекает одна из двух величайших по протяжённости рек в мире – Нил.
+                    Река Нил – одна из самых больших рек в мире (6671 км). Эта великая река и стала колыбелью
+                    цивилизации в регионе.
+                    Около 96% территории страны занимают пустыни, 4% приходится на Дельту и долину реки Нил.
+                    Для фауны Египта характерны: газель, лиса, тушканчик, гиена, шакал, бегемот, крокодил, большое
+                    количество птиц, насекомых, ящериц и змей.
+                </p>
+            </div>
+            <div class="text mb-50">
+                <h3>
+                    Кому подойдет отдых?
+                </h3>
+                <div class="articles">
+                    <div class="article-card article-card--yellow">
+                        <h4 class="article-card__title">
+                            Старшему поколению
+                        </h4>
+                        <picture class="article-card__picture">
+                            <img src="./assets/images/tour/oldpeople.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="article-card article-card--green">
+                        <h5 class="article-card__title">
+                            Молодой семье
+                        </h5>
+                        <picture class="article-card__picture">
+                            <img src="./assets/images/tour/familly.png" alt="">
+                        </picture>
+                    </div>
+                    <div class="article-card article-card--blue">
+                        <h5 class="article-card__title">
+                            Любителям активного отдыха
+                        </h5>
+                        <picture class="article-card__picture">
+                            <img src="./assets/images/tour/travelers.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="text mb-75 mbm-40">
+                <h3>
+                    Климат
+                </h3>
+                <p>
+                    Климат Египта повсеместно тропический пустынный, Египет является частью пустыни Сахары. Лето
+                    очень жаркое, столбик термометра может местами в тени приближаться к 50-градусной отметке, но
+                    ночью всегда намного прохладнее, суточные перепады температур очень велики, межсезонные меньше.
+                    На морях колебания межсуточные и межсезонные несколько меньше. Зимы более прохладные,
+                    температура днём в январе обычно варьирует в пределах 20-25 °C. Ночи холодные, температура в
+                    среднем составляет 10 °C, но в пустынях возможны и слабые заморозки (до -5 °C).
+                </p>
+            </div>
+            <div class="graph">
+                <ul class="graph__nums">
+                    <li class="graph__num">50°C</li>
+                    <li class="graph__num">40°C</li>
+                    <li class="graph__num">30°C</li>
+                    <li class="graph__num">20°C</li>
+                    <li class="graph__num">10°C</li>
+                    <li class="graph__num">0°C</li>
+                </ul>
+                <div class="graph__content">
+                    <div class="graph__item">
+                        <div class="graph__post">
+                            <span class="graph__fill" style="height: calc(23% * 2)"></span>
+                        </div>
+                        <p class="graph__month">Янв</p>
+                    </div>
+                    <div class="graph__item">
+                        <div class="graph__post">
+                            <span class="graph__fill" style="height: calc(18% * 2)"></span>
+                        </div>
+                        <p class="graph__month">Фев</p>
+                    </div>
+                    <div class="graph__item">
+                        <div class="graph__post">
+                            <span class="graph__fill" style="height: calc(17% * 2)"></span>
+                        </div>
+                        <p class="graph__month">Ма</p>
+                    </div>
+                    <div class="graph__item">
+                        <div class="graph__post">
+                            <span class="graph__fill" style="height: calc(19% * 2)"></span>
+                        </div>
+                        <p class="graph__month">Ап</p>
+                    </div>
+                    <div class="graph__item">
+                        <div class="graph__post">
+                            <span class="graph__fill" style="height: calc(27% * 2)"></span>
+                        </div>
+                        <p class="graph__month">Май</p>
+                    </div>
+                    <div class="graph__item">
+                        <div class="graph__post">
+                            <span class="graph__fill" style="height: calc(38% * 2)"></span>
+                        </div>
+                        <p class="graph__month">Ин</p>
+                    </div>
+                    <div class="graph__item">
+                        <div class="graph__post">
+                            <span class="graph__fill" style="height: calc(40% * 2)"></span>
+                        </div>
+                        <p class="graph__month">Ил</p>
+                    </div>
+                    <div class="graph__item">
+                        <div class="graph__post">
+                            <span class="graph__fill" style="height: calc(45% * 2)"></span>
+                        </div>
+                        <p class="graph__month">Авг</p>
+                    </div>
+                    <div class="graph__item">
+                        <div class="graph__post">
+                            <span class="graph__fill" style="height: calc(31% * 2)"></span>
+                        </div>
+                        <p class="graph__month">Сен</p>
+                    </div>
+                    <div class="graph__item">
+                        <div class="graph__post">
+                            <span class="graph__fill" style="height: calc(16% * 2)"></span>
+                        </div>
+                        <p class="graph__month">Окт</p>
+                    </div>
+                    <div class="graph__item">
+                        <div class="graph__post">
+                            <span class="graph__fill" style="height: calc(12% * 2)"></span>
+                        </div>
+                        <p class="graph__month">Нояб</p>
+                    </div>
+                    <div class="graph__item">
+                        <div class="graph__post">
+                            <span class="graph__fill" style="height: calc(10% * 2)"></span>
+                        </div>
+                        <p class="graph__month">Дек</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section mb-150 mbm-80 section--clear">
+        <div class="container">
+            <div class="list">
+                <div class="list__item col-sm-6 col-md-4 col-6">
+                    <img src="./assets/images/tour/slider-1.png" alt="">
+                </div>
+                <div class="list__item col-sm-6 col-md-4 col-6">
+                    <img src="./assets/images/tour/slider-2.png" alt="">
+                </div>
+                <div class="list__item col-sm-6 col-md-4 col-6">
+                    <img src="./assets/images/tour/slider-3.png" alt="">
+                </div>
+                <div class="list__item col-sm-6 col-md-4 col-6">
+                    <img src="./assets/images/tour/slider-4.png" alt="">
+                </div>
+                <div class="list__item col-sm-6 col-md-4 col-6">
+                    <img src="./assets/images/tour/slider-1.png" alt="">
+                </div>
+                <div class="list__item col-sm-6 col-md-4 col-6">
+                    <img src="./assets/images/tour/slider-1.png" alt="">
+                </div>
+                <div class="list__item col-sm-6 col-md-4 col-6">
+                    <img src="./assets/images/tour/slider-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section--bg mb-100 mbm-50 section--clear">
+        <div class="container">
+            <div class="row justify-content-lg-center">
+                <div class="col-lg-12">
+                    <div class="section__text mb-80 mbm-40 text-center">
+                        <h2 class="title mb-25 mbm-7">Курорты</h2>
+                        <div class="slogan">
+                            Ездили и будем ездить!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-lg-center">
+                <div class="col-md-4 col-sm-6">
+                    <div class="article-resort">
+                        <div class="article-resort__picture">
+                            <img src="./assets/images/tour/hoorgada.jpg" alt="">
+                            <div class="article-resort__icon">
+                                <img src="./assets/images/tour/icon-island.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="article-resort__body">
+                            <h3 class="article-resort__title">Хургада</h3>
+                            <p class="article-resort__text">Осенью и зимой туристов в ОАЭ настолько много, что можно
+                                часами стоять в очереди на ...</p>
+                            <button class="btn">Выбрать тур</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="article-resort">
+                        <div class="article-resort__picture">
+                            <img src="./assets/images/tour/marsa.jpg" alt="">
+                            <div class="article-resort__icon">
+                                <img src="./assets/images/tour/icon-diver.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="article-resort__body">
+                            <h3 class="article-resort__title">Хургада</h3>
+                            <p class="article-resort__text">Осенью и зимой туристов в ОАЭ настолько много, что можно
+                                часами стоять в очереди на ...</p>
+                            <button class="btn">Выбрать тур</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="article-resort">
+                        <div class="article-resort__picture">
+                            <img src="./assets/images/tour/sharm.jpg" alt="">
+                            <div class="article-resort__icon">
+                                <img src="./assets/images/tour/icon-fire.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="article-resort__body">
+                            <h3 class="article-resort__title">Хургада</h3>
+                            <p class="article-resort__text">Осенью и зимой туристов в ОАЭ настолько много, что можно
+                                часами стоять в очереди на ...</p>
+                            <button class="btn">Выбрать тур</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section mb-120 mbm-80 section--clear">
+        <div class="container">
+            <h2 class="title mb-60 mbm-50 text-center">Отзывы</h2>
+            <div class="row mb-50">
+                <div class="reviews-slider">
+                    <div class="col-md-6">
+                        <div class="article-reviews">
+                            <h3 class="article-reviews__title">Отлично!</h3>
+                            <p class="article-reviews__text">Внимание к каждой детали и эксклюзивные привилегии —
+                                главные
+                                ориентиры премиального отдыха в Египте. Гостей ждет поистине богемный отдых/</p>
+                            <div class="article-reviews__footer">
+                                <div class="article-reviews__author">
+                                    <picture class="article-reviews__picture">
+                                        <img src="https://fakeimg.pl/100x100" alt="">
+                                    </picture>
+                                    <div class="article-reviews__info">
+                                        <h4 class="article-reviews__name">Кузнецов Дмитрий</h4>
+                                        <p class="article-reviews__resort">Хургада</p>
+                                    </div>
+                                </div>
+                                <div class="article-reviews__rating">
+                                    <svg class="article-reviews__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <p>4.3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="article-reviews">
+                            <h3 class="article-reviews__title">Отлично!</h3>
+                            <p class="article-reviews__text">Внимание к каждой детали и эксклюзивные привилегии —
+                                главные
+                                ориентиры премиального отдыха в Египте. Гостей ждет поистине богемный отдых/</p>
+                            <div class="article-reviews__footer">
+                                <div class="article-reviews__author">
+                                    <picture class="article-reviews__picture">
+                                        <img src="https://fakeimg.pl/100x100" alt="">
+                                    </picture>
+                                    <div class="article-reviews__info">
+                                        <h4 class="article-reviews__name">Кузнецов Дмитрий</h4>
+                                        <p class="article-reviews__resort">Хургада</p>
+                                    </div>
+                                </div>
+                                <div class="article-reviews__rating">
+                                    <svg class="article-reviews__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <p>4.3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="article-reviews">
+                            <h3 class="article-reviews__title">Отлично!</h3>
+                            <p class="article-reviews__text">Внимание к каждой детали и эксклюзивные привилегии —
+                                главные
+                                ориентиры премиального отдыха в Египте. Гостей ждет поистине богемный отдых/</p>
+                            <div class="article-reviews__footer">
+                                <div class="article-reviews__author">
+                                    <picture class="article-reviews__picture">
+                                        <img src="https://fakeimg.pl/100x100" alt="">
+                                    </picture>
+                                    <div class="article-reviews__info">
+                                        <h4 class="article-reviews__name">Кузнецов Дмитрий</h4>
+                                        <p class="article-reviews__resort">Хургада</p>
+                                    </div>
+                                </div>
+                                <div class="article-reviews__rating">
+                                    <svg class="article-reviews__icon">
+                                        <use xlink:href="./assets/sprite/sprite.svg#icon-star"></use>
+                                    </svg>
+                                    <p>4.3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-lg btn-animation centered">Оставить отзыв</button>
+        </div>
+    </section>
+    <section class="section section--cover"
+             style="background-image: url('./assets/images/bg-cover.jpg')">
+        <div class="subscribe container">
+            <div class="section__inner">
+                <div class="section__text">
+                    <h2>Подписывайтесь на рассылку от Туроператора Цвет!</h2>
+                    <div class="subscribe__descr">
+                        Узнавайте о скидках, акциях и самых горячих новостях первыми
+                    </div>
+                    <div class="form">
+                        <div class="bx-subscribe" id="sender-subscribe">
+                            <!--'start_frame_cache_sender-subscribe'-->
+                            <script>
+                                (function () {
+                                    var btn = BX('bx_subscribe_btn_sljzMT');
+                                    var form = BX('bx_subscribe_subform_sljzMT');
+
+                                    if (!btn) {
+                                        return;
+                                    }
+
+                                    function mailSender() {
+                                        setTimeout(function () {
+                                            if (!btn) {
+                                                return;
+                                            }
+
+                                            var btn_span = btn.querySelector("span");
+                                            var btn_subscribe_width = btn_span.style.width;
+                                            BX.addClass(btn, "send");
+                                            btn_span.outterHTML = "<span><i class='fa fa-check'></i> ГОТОВО</span>";
+                                            if (btn_subscribe_width) {
+                                                btn.querySelector("span").style["min-width"] = btn_subscribe_width + "px";
+                                            }
+                                        }, 400);
+                                    }
+
+                                    BX.ready(function () {
+                                        BX.bind(btn, 'click', function () {
+                                            setTimeout(mailSender, 250);
+                                            return false;
+                                        });
+                                    });
+
+                                    BX.bind(form, 'submit', function () {
+                                        btn.disabled = true;
+                                        setTimeout(function () {
+                                            btn.disabled = false;
+                                        }, 2000);
+
+                                        return true;
+                                    });
+                                })();
+                            </script>
+
+                            <form class="form-subcribe-custom" id="bx_subscribe_subform_sljzMT" role="form"
+                                  method="post" action="/">
+                                <input type="hidden" name="sessid" id="sessid" value="1a37a05b1b8de2eb76877583aa48dce9">
+                                <input type="hidden" name="sender_subscription" value="add">
+
+                                <div class="bx-input-group">
+                                    <input class="form-control" type="email" name="SENDER_SUBSCRIBE_EMAIL" value=""
+                                           title="Введите ваш e-mail" placeholder="Введите ваш e-mail">
+                                </div>
+
+                                <div style="">
+                                </div>
+
+
+                                <div class="bx_subscribe_submit_container">
+                                    <button class="btn btn-primary btn-animation" id="bx_subscribe_btn_sljzMT"><span>Подписаться</span>
+                                    </button>
+                                </div>
+                            </form>
+                            <!--'end_frame_cache_sender-subscribe'--></div>
+                    </div>
+                    <p>Нажимая на кнопку я даю согласие на обработку <a href="/privacy/" target="_blank">персональных
+                        данных</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+</script>
+</body>
+
+</html>

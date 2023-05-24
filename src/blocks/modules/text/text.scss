@@ -1,0 +1,22 @@
+.text {
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+
+  h3 {
+    margin-bottom: rem(30);
+    font-size: rem(20);
+
+    @include r(768) {
+      font-size: rem(20);
+    }
+  }
+
+  p {
+    font-size: rem(16);
+    line-height: rem(29);
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+    }
+  }
+}

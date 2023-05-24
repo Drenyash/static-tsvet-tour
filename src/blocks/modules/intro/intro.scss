@@ -1,0 +1,42 @@
+.intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    margin: 0;
+    margin-bottom: rem(38);
+    font-weight: 500;
+    font-size: rem(103);
+    line-height: rem(125);
+    z-index: 1;
+
+    @include r(575) {
+      margin-bottom: rem(14);
+      font-size: rem(70);
+      line-height: rem(83);
+    }
+
+    &--white {
+      color: #fff;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

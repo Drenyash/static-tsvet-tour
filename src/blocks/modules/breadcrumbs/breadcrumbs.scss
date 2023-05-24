@@ -1,0 +1,13 @@
+.breadcrumbs {
+    position: relative;
+    z-index: 1;
+    &--white {
+        span {
+            color: #fff;
+        }
+    }
+
+    &__icon {
+        height: rem(10);
+    }
+}

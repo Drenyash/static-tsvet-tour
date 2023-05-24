@@ -1,0 +1,68 @@
+.tour-info {
+  padding: rem(45) rem(100) rem(42);
+  background: #FFFFFF;
+  box-shadow: 21px -2px 77px rgba(165, 165, 165, 0.25);
+  border-radius: 10px;
+
+  @include r(768) {
+    padding: rem(40) rem(30);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: rem(45);
+    @include r(991) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include r(575) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: rem(32);
+  }
+
+  &__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: rem(63);
+    height: rem(63);
+    overflow: hidden;
+    background: linear-gradient(101.89deg, #E6A526 5.66%, #F3D533 96.72%);
+    border-radius: 50%;
+  }
+
+  &__icon {
+    display: block;
+    width: rem(30);
+    height: rem(30);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(4);
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: rem(19);
+    color: $dark;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: rem(19);
+    color: $dark;
+  }
+}

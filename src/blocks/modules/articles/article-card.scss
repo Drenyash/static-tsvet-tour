@@ -1,0 +1,65 @@
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(33);
+
+  @include r(991) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include r(575) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.article-card {
+  position: relative;
+  display: flex;
+  padding: rem(30);
+  width: 100%;
+  height: rem(172);
+  margin-top: rem(50);
+  border-radius: rem(6);
+
+  &__picture {
+    display: flex;
+    z-index: 0;
+
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: block;
+      margin-left: auto;
+      width: auto;
+      max-height: 15rem;
+    }
+  }
+
+  &__title {
+    max-width: rem(136);
+    font-weight: 700;
+    font-size: rem(20);
+    line-height: rem(31);
+    color: #fff;
+    z-index: 5;
+
+    @include r(768) {
+      font-size: rem(18);
+      line-height: rem(28);
+    }
+  }
+
+  &--yellow {
+    background-color: #F2C94C;
+  }
+
+  &--green {
+    background-color: #27AE60;
+  }
+
+  &--blue {
+    background-color: #2D9CDB;
+  }
+
+}
