@@ -1,7 +1,7 @@
 .article-reviews {
   display: flex;
   flex-direction: column;
-  padding: rem(57) rem(48) rem(32);
+  padding: rem(57) rem(51) rem(32) rem(48);
   background-color: #fff;
 
   @include r(768) {
@@ -17,7 +17,7 @@
   &__author {
     display: flex;
     align-items: center;
-    column-gap: rem(24);
+    column-gap: rem(22);
 
     @include r(768) {
       column-gap: rem(24);
@@ -47,7 +47,7 @@
 
   &__text {
     margin: 0;
-    margin-bottom: rem(35);
+    margin-bottom: rem(30);
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;

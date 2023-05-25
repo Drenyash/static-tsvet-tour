@@ -11,7 +11,7 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: rem(45);
+    gap: rem(42) rem(35);
     @include r(991) {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -23,7 +23,7 @@
   &__item {
     display: flex;
     align-items: center;
-    column-gap: rem(32);
+    column-gap: rem(30);
   }
 
   &__picture {

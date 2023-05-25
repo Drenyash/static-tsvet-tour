@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: rem(33);
+  margin-top: rem(-11);
 
   @include r(991) {
     grid-template-columns: repeat(2, 1fr);
@@ -17,7 +18,7 @@
   display: flex;
   padding: rem(30);
   width: 100%;
-  height: rem(172);
+  height: rem(168);
   margin-top: rem(50);
   border-radius: rem(6);
 
